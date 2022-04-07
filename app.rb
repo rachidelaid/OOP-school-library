@@ -59,7 +59,7 @@ class App
     parent_permission = gets.chomp.downcase
     case parent_permission
     when 'n'
-      Student.new('classroom',age, name, parent_permission: false)
+      Student.new('classroom', age, name, parent_permission: false)
       @persons << student
       puts 'Student doesnt have parent permission, cant rent books'
     when 'y'
